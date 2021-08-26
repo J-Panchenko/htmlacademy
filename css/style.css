@@ -53,11 +53,25 @@
     font-display: swap;
 }
 
+h1, h2, h3, h4 {
+    margin: 0;
+}
+
+h1, h2, h3, h4, p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
 
 a {
     color: inherit;
     text-decoration: none;
 }
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}  
 
 button {
     border: none;
@@ -131,52 +145,60 @@ body {
     
 }
 
-.menu {
+.header {
     margin-top: 25px;
     margin-bottom: 80px;
     border-top: 1px solid #AE7C78;
     border-bottom: 1px solid #AE7C78;
+}  
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.menu__link-logo {
+    width: 150px;
+    height: 33px;
+    margin: 16px auto 0;
+    z-index: 1;
+    padding: 0 25px;
+}
+
 
 .menu__list {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 100%;
+    justify-content: flex-start;
     flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    margin-top: -49px;  
 }
 
-.menu__item-first,
-.menu__item-second {
+.menu__item:first-child,
+.menu__item:nth-child(2) {
     margin-right: 101px;
 }
 
-.menu__item-penultimate,
-.menu__item-last {
-    margin-left: 89px;
+.menu__item:nth-child(3) {
+    margin-right: auto;
 }
 
-.menu__item-logo {
-    margin: auto;
+.menu__item:last-child,
+.menu__item:nth-last-child(2) {
+    margin-left: 89px;
 }
 
 .menu__link {
     display: block;
     height: 64px;
     padding: 22px 0;
-    color: #AE7C78;
-    font-size: 16px;
-    line-height: 20px;
     transition: color 0.5s;
 }
 
 .menu__link:hover {
     color: #5c3e3e;
-}
-
-.menu__link-logo {
-    padding-top: 16px;
-    padding-bottom: 0;
 }
 
 .about {
@@ -228,7 +250,8 @@ body {
 
 .benefits {
     display: flex;
-    grid-column: 1/3;
+    align-items: flex-start;
+    grid-column: 1/4;
     grid-row: 8/9;
     position: relative;
 }
@@ -247,10 +270,6 @@ body {
 
 .benefits__item + .benefits__item {
     margin-left: 120px;
-}
-
-.benefits__item-title {
-    margin-bottom: 8px;
 }
 
 .benefits__item-description {
@@ -349,7 +368,6 @@ body {
 }
 
 .catalog__list {
-    list-style: none;
     display: flex;
     justify-content: space-between;
 }
@@ -532,11 +550,12 @@ body {
     grid-row: 3/4;
     margin-right: auto;
     margin-bottom: auto;
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .social__link {
-    display: inline-block;
-    vertical-align: middle;
     height: 20px;
     cursor: pointer;
 }
@@ -545,14 +564,12 @@ body {
     background-image: url(../images/social-button-rose.png);
     background-position: 0 0;
     width: 21px;
-    margin-right: 20px;
 }
 
 .social__fb {
     background-image: url(../images/social-button-rose.png);
     background-position: -41px 0;
     width: 12px;
-    margin-right: 18px;
 }
 
 .social__tw {
@@ -596,6 +613,7 @@ body {
     display: inline-block;
     width: 300px;
     text-align: center;
+    margin: 0;
     margin-right: 100px;
 }
 
@@ -610,6 +628,7 @@ body {
 
 .reviews__item-title {
     padding-bottom: 0;
+    font-style: normal;
 }
 
 .contacts {
@@ -624,9 +643,7 @@ body {
 .contacts__inner {
     width: 386px;
     margin-left: 100px;
-    padding-left: 35px;
-    padding-bottom: 65px;
-    padding-top: 40px;
+    padding: 40px 0 65px 35px;
     background-color: #F7FAFC;
     box-shadow: 0px 4px 40px rgba(217, 217, 217, 0.3);
     border-radius: 12px; 
@@ -641,8 +658,6 @@ body {
 
 .contacts__box {
     font-style: normal;
-    margin: 0;
-    padding: 0;
 }
 
 .contacts__text {
@@ -672,25 +687,25 @@ body {
 .footer__inner {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.footer__logo {
+    width: 100px;
+}
+
+.footer__menu {
+    width: 780px;
 }
 
 .footer__menu-list {
-    text-align: center;
-    display: flex;
-}
-
-.footer__menu-item {
-    margin-right: 68px;
     color: #fff;
-}
-
-.footer__menu-item:last-child {
-    margin-right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .footer__menu-link {
-    line-height: 33px;
-    vertical-align: middle;
     transition: color .5s;
 }
 
@@ -699,21 +714,19 @@ body {
 }
 
 .footer__social-links {
-    padding-top: 6px;
+    margin: 0;
 }
 
 .social__inst-footer {
     background-image: url(../images/social-button-white.png);
     background-position: 0 0;
     width: 21px;
-    margin-right: 20px;
 }
 
 .social__fb-footer {
     background-image: url(../images/social-button-white.png);
     background-position: -41px 0;
     width: 12px;
-    margin-right: 18px;
 }
 
 .social__tw-footer {
