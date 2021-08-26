@@ -292,32 +292,13 @@ body {
     position: relative;
 }
 
-.popular__slider::before {
-    content: '';
-    position: absolute;
-    background-image: url(../images/arrow-left.png);
-    width: 51px;
-    height: 16px;
-    bottom: -8px;
-    left: 336px;
-}
-
-.popular__slider::after {
-    content: '';
-    position: absolute;
-    background-image: url(../images/arrow-right.png);
-    width: 51px;
-    height: 16px;
-    bottom: -8px;
-    right: 336px;
-}
-
 .popular__item {
     display: grid;
     grid-template-rows: 56px 60px 68px 93px 161px;
     grid-template-columns: 387px 387px;
     column-gap: 20px;
     text-align: left;
+    margin-bottom: 16px;
 }
 
 .popular__item-title {
@@ -361,6 +342,32 @@ body {
     margin-right: auto;
     margin-bottom: auto;
     padding: 30px 106px;
+}
+
+.slider__btn {
+    display: flex;
+    justify-content: center;
+}
+
+.arrow {
+    cursor: pointer;
+    width: 51px;
+    height: 16px;
+    padding: 0;
+    font-size: 0;
+}
+
+.arrow-left {
+    background-image: url(../images/arrow-left.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 20px;
+}
+
+.arrow-right {
+    background-image: url(../images/arrow-right.png);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .catalog {
