@@ -9,14 +9,14 @@
     <meta name="viewport" content="width=device-width,  initial-scale=1.0">
     <title>Botanika - цветы в Петербурге</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/min.css">
 </head>
 
 <body>
     <header class="header">
         <nav class="menu container">
             <a class="menu__link-logo" href="index.html">
-                <img src="images/logo.png" width="100" height="32" alt="Go to Home page">
+                <img src="images/logo-rose.svg" width="100" height="32" alt="Логотип-ссылка на главную страницу">
             </a>
             <ul class="menu__list">
                 <li class="menu__item"><a href="#" class="menu__link">Каталог</a></li>
@@ -34,8 +34,10 @@
                 <h1 class="about__title">Авторские букеты в <em>Петербурге</em></h1>
                 <p class="about__description">Оригинальные свежие букеты с доставкой по всему городу</p>
                 <a href="#" class="button about__catalog-link">Смотреть каталог</a>
-                <img class="about__img" src="images/about-catalog-1.jpg" width="386" height="404" alt="bouquet">
-                <img class="about__img" src="images/about-catalog-2.jpg" width="387" height="420" alt="bouquet">
+                <img class="about__img" src="images/about-catalog-tulips.jpg" width="386" height="404"
+                    alt="Букет нежно-розовых тюльпанов в молочно-серой обертке">
+                <img class="about__img" src="images/about-catalog-roses.jpg" width="387" height="420"
+                    alt="Букет белый и розовых роз в бледно-оранжевой обертке">
                 <div class="benefits">
                     <h2 class="title visually-hidden">Наши преимущества</h2>
                     <div class="benefits__item">
@@ -72,7 +74,7 @@
                         <p class="popular__item-price">3600 руб.</p>
                     </div>
                     <img class="popular__item-img" src="images/bouquet.png" width="387" height="438"
-                        alt="bouquet-tenderness">
+                        alt="Букет Нежность - белые кустовые маленькие розы в молочной обертке с белым бантом">
                     <button type="button" class="button popular__item-btn">Заказать</button>
                 </article>
                 <div class="slider__btn">
@@ -103,13 +105,14 @@
                 </li>
             </ul>
         </section>
-        <section class="promo">
-            <div class="container promo__inner">
+        <section class="promo container">
+            <div class="promo__inner">
                 <h2 class="promo__title">Скидка 10% на первый заказ</h2>
                 <p class="promo__description">Если заказываете у нас букет впервые — при оформлении заказа введите
                     промокод
                     «Botanika2021» и получите скидку 10%.</p>
-                <img class="promo__img" src="images/promo-bouquet.jpg" width="590" height="391" alt="promo-bouquet">
+                <img class="promo__img" src="images/promo-bouquet.jpg" width="590" height="391"
+                    alt="Букет с разноцветных роз и пионов с добавлением заленых декоративных веток в нежной обертке цвета капучино">
             </div>
         </section>
         <section class="info container">
@@ -134,76 +137,103 @@
                 </div>
             </div>
         </section>
-        <section class="social">
-            <div class="container social__inner">
+        <section class="social container">
+            <div class="social__inner">
                 <h2 class="title social__title">Следите за нашими новостями</h2>
                 <p class="social__content">Подписывайтесь на наши соцсети и узнавайте о новинках и акциях первым.
                 </p>
                 <div class="social__links">
-                    <a class="social__link social__inst" href="https://www.instagram.com/"></a>
-                    <a class="social__link social__fb" href="https://www.facebook.com/"></a>
-                    <a class="social__link social__tw" href="https://twitter.com/"></a>
+                    <a class="social__link social__inst" href="https://www.instagram.com/" title="Instagram">
+                        <span class="visually-hidden">Instagram</span>
+                    </a>
+                    <a class="social__link social__fb" href="https://www.facebook.com/" title="Facebook">
+                        <span class="visually-hidden">Facebook</span></a>
+                    <a class="social__link social__tw" href="https://twitter.com/" title="Twitter">
+                        <span class="visually-hidden">Twitter</span>
+                    </a>
                 </div>
-                <img class="social__img-first" src="images/news-top.jpg" width="285" height="220" alt="bouquet-img">
-                <img class="social__img-second" src="images/news-bottom.jpg" width="285" height="220" alt="bouquet-img">
-                <img class="social__img-third" src="images/news-right.jpg" width="387" height="460" alt="bouquet-img">
+                <img class="social__img" src="images/news-composition.jpg" width="285" height="220"
+                    alt="Композиционный букет цветов пастельных оттенков с декоративными зелеными ветками, вид сверху">
+                <img class="social__img" src="images/news-rose.jpg" width="285" height="220"
+                    alt="Нежно-розовый букет роз с декоративными белыми цветами и зеленью">
+                <img class="social__img" src="images/news-bouquet.jpg" width="387" height="460"
+                    alt="Букет нежно-розовых гвоздик с декоративными белыми ветками в бледно-рощовой обертке с золотой лентой">
             </div>
         </section>
-        <section class="reviews">
-            <div class="container reviews__inner">
+        <section class="reviews container">
+            <div class="reviews__inner">
                 <h2 class="title reviews__title">Отзывы</h2>
                 <blockquote class="reviews__item">
-                    <p class="reviews__item-content">Всё очень понравилось! Быстрое оформление заказа, выбор
+                    <p class="reviews__item-comment">Всё очень понравилось! Быстрое оформление заказа, выбор
                         удобного времени доставки. Всем большое спасибо!</p>
-                    <cite class="subtitle reviews__item-title">Марина</cite>
+                    <cite class="subtitle reviews__item-author">Марина</cite>
                 </blockquote>
                 <blockquote class="reviews__item">
-                    <p class="reviews__item-content">Внимательные флористы, вежливые. Магазин находится прям рядом с
+                    <p class="reviews__item-comment">Внимательные флористы, вежливые. Магазин находится прям рядом с
                         метро. Букет очень понравился, буду ещё заказывать!</p>
-                    <cite class="subtitle reviews__item-title">Татьяна</cite>
+                    <cite class="subtitle reviews__item-author">Татьяна</cite>
                 </blockquote>
                 <blockquote class="reviews__item">
-                    <p class="reviews__item-content">Выбор букетов на любой вкус и цену. Бывают хорошие скидки, а
+                    <p class="reviews__item-comment">Выбор букетов на любой вкус и цену. Бывают хорошие скидки, а
                         флористы всегда помогут и точно соберут красивый букет!</p>
-                    <cite class="subtitle reviews__item-title">Ольга</cite>
+                    <cite class="subtitle reviews__item-author">Ольга</cite>
                 </blockquote>
             </div>
         </section>
         <section class="contacts">
-            <div class="container">
-                <div class="contacts__inner">
-                    <h2 class="title contacts__title">Мы ждем вас</h2>
-                    <address class="contacts__box">
+            <img class="contacts__map" src="images/map.jpg" width="1440" height="645"
+                alt="Карта с точкой координат цветочного магазина Ботаника">
+            <div class="contacts__inner">
+                <h2 class="title contacts__title">Мы ждем вас</h2>
+                <address class="contacts__box">
+                    <div class="contacts__box-item">
                         <p class="contacts__text">Приходите к нам:</p>
                         <a href="https://clck.ru/Wtkmb" class="contacts__info-link">Санкт-Петербург,
                             ул. Большая Конюшенная, 19</a>
+                    </div>
+                    <div class="contacts__box-item">
                         <p class="contacts__text">Режим работы:</p>
                         <p class="contacts__info-link">Пн-Вс, с 9-00 до 20-00</p>
+                    </div>
+                    <div class="contacts__box-item">
                         <p class="contacts__text">Позвоните нам:</p>
                         <a href="tel:+78129834719" class="contacts__info-link">+ 7 (812) 983-47-19</a>
+                    </div>
+                    <div class="contacts__box-item">
                         <p class="contacts__text">Напишите нам:</p>
                         <a href="mailto:info@botanika.ru" class="contacts__info-link">info@botanika.ru</a>
-                    </address>
-                </div>
+                    </div>
+                </address>
             </div>
         </section>
     </main>
     <footer class="footer">
-        <div class="footer__inner container">
-            <img class="footer__logo" src="images/footer-logo.png" width="100" height="33" alt="logo">
-            <nav class="footer__menu">
-                <ul class="footer__menu-list">
-                    <li class="footer__menu-item"><a href="#" class="footer__menu-link">Каталог</a></li>
-                    <li class="footer__menu-item"><a href="#" class="footer__menu-link">Доставка и оплата</a></li>
-                    <li class="footer__menu-item"><a href="#" class="footer__menu-link">Отзывы</a></li>
-                    <li class="footer__menu-item"><a href="#" class="footer__menu-link">Спецпредложения</a></li>
-                    <li class="footer__menu-item"><a href="#" class="footer__menu-link">Контакты</a></li>
-                </ul>
-            </nav>
-            <div class="social__links footer__social-links">
-                <a class="social__link social__inst-footer" href="https://www.instagram.com/"></a>
-                <a class="social__link social__fb-footer" href="https://www.facebook.com/"></a>
-                <a class="social__link social__tw-footer" href="https://twitter.com/"></a>
+        <div class="container">
+            <div class="footer__inner">
+                <a class="footer__link-logo" href="index.html">
+                    <img class="footer__logo-img" src="images/logo-white.svg" width="100" height="33"
+                        alt="Логотип цветочного магазина Ботаника">
+                </a>
+                <nav class="footer__menu">
+                    <ul class="footer__menu-list">
+                        <li class="footer__menu-item"><a href="#" class="footer__menu-link">Каталог</a></li>
+                        <li class="footer__menu-item"><a href="#" class="footer__menu-link">Доставка и оплата</a></li>
+                        <li class="footer__menu-item"><a href="#" class="footer__menu-link">Отзывы</a></li>
+                        <li class="footer__menu-item"><a href="#" class="footer__menu-link">Спецпредложения</a></li>
+                        <li class="footer__menu-item"><a href="#" class="footer__menu-link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="footer__social">
+                    <a class="footer__social-link footer__inst" href="https://www.instagram.com/" title="Instagram">
+                        <span class="visually-hidden">Instagram</span>
+                    </a>
+                    <a class="footer__social-link footer__fb" href="https://www.facebook.com/" title="Facebook">
+                        <span class="visually-hidden">Facebook</span>
+                    </a>
+                    <a class="footer__social-link footer__tw" href="https://twitter.com/" title="Twitter">
+                        <span class="visually-hidden">Twitter</span>
+                    </a>
+                </div>
             </div>
         </div>
     </footer>
